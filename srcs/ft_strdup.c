@@ -6,17 +6,17 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:02:11 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 12:44:03 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 22:11:23 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
-	int		i;
-	int		j;
-	char	*t;
+	int i;
+	int j;
+	char *t;
 
 	i = 0;
 	j = -1;

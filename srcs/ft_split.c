@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:20:14 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 16:39:00 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 22:11:13 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ static char	*fill_letters(char const *str, char set)
 	i = 0;
 	while (!is_sep(str[i], set) && str[i])
 		i++;
-	newstr = (char *) malloc((i + 1) * sizeof(char));
-    if (!newstr)
-        return (0);
+	newstr = (char *)malloc((i + 1) * sizeof(char));
+	if (!newstr)
+		return (0);
 	i = 0;
 	while (!is_sep(str[i], set) && str[i])
 	{
@@ -59,7 +59,7 @@ static char	*fill_letters(char const *str, char set)
 	return (newstr);
 }
 
-char **ft_split(char const *s, char set)
+char	**ft_split(char const *s, char set)
 {
 	char	**split_str;
 	int		count;
@@ -67,9 +67,9 @@ char **ft_split(char const *s, char set)
 
 	i = 0;
 	count = word_count(s, set);
-	split_str = (char **) malloc((count + 1) * sizeof(char *));
-    if (!split_str)
-        return (0);
+	split_str = (char **)malloc((count + 1) * sizeof(char *));
+	if (!split_str)
+		return (0);
 	while (*s)
 	{
 		while (*s && is_sep(*s, set))

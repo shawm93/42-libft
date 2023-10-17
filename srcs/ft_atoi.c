@@ -6,11 +6,11 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:42:58 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 11:48:52 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 22:00:02 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	minus_num;
 	int	res;

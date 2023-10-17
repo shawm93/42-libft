@@ -24,8 +24,8 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
-$(OBJS): $(SRCS)
-#%.o: %.c
+#$(OBJS): $(SRCS)
+%.o: %.c
 	$(CC) $(CFLAGS) $(OPTION) -c $< -o $@
 
 clean:

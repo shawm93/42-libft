@@ -6,13 +6,13 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 21:06:39 by long              #+#    #+#             */
-/*   Updated: 2023/10/16 22:00:19 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 22:12:02 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int	count;
+	unsigned int count;
 
 	count = 0;
 	while (s1[count] != '\0' && s2[count] != '\0' && count < n)

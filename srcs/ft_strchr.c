@@ -6,20 +6,21 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 18:41:06 by long              #+#    #+#             */
-/*   Updated: 2023/10/16 20:27:29 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 23:19:46 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strchr(char *s, int c)
-{
-    char *ptr;
 
-    ptr = s;
-    while (ptr)
-    {
-        if (*ptr == c)
-            return (ptr);
-        ptr++;
-    }
-    return (0);
+char	*ft_strchr(char *s, int c)
+{
+	char *ptr;
+
+	ptr = s;
+	while (*ptr)
+	{
+		if (*ptr == (unsigned char) c)
+			return (ptr);
+		ptr++;
+	}
+	return (0);
 }

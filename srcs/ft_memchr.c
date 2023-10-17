@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:46:29 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 10:59:40 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 22:59:19 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ void *ft_memchr(const void *s, int c, size_t n)
     str = (unsigned char *)s;
     chr = (unsigned char)c;
     i = 0;
-    while (i < n && *str)
+    while (i < n)
     {
-        if (*str == chr)
-            return (str);
-        str++;
+        if (str[i] == chr)
+            return (&str[i]);
         i++;
     }
     return (0);

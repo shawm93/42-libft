@@ -6,25 +6,25 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 22:23:15 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 15:41:25 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 22:22:39 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void *ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-    size_t  i;
-    char    *s;
-    char    *d;
+	size_t i;
+	char *s;
+	char *d;
 
-    i = 0;
-    s = (char *)src;
-    d = (char *)dst;
-    while (i < n)
-    {
-        d[i] = s[i];
-        i++;
-    }
-    return (dst);
+	i = 0;
+	s = (char *)src;
+	d = (char *)dst;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dst);
 }
