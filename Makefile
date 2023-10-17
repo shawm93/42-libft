@@ -19,7 +19,6 @@ $(NAME): $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
 #$(OBJS): $(SRCS)
-
 %.o: %.c
 	$(CC) $(CFLAGS) $(OPTION) -c $< -o $@
 
