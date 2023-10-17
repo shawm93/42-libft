@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:40:39 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 16:40:50 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 17:16:42 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@
 # include <ctype.h>
 # include <string.h>
 # include <stddef.h>
+
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list;
 
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
