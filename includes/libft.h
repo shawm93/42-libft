@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:40:39 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 12:43:10 by long             ###   ########.fr       */
+/*   Updated: 2023/10/17 15:56:42 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,9 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t len);
 char    *ft_strrchr(char *s, int c);
 int ft_tolower(int c);
 int ft_toupper(int c);
+
+char    *ft_itoa(int n);
+char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
 
 #endif
