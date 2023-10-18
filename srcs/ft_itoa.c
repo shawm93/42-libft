@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:53:50 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:09:11 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 22:18:46 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ char	*ft_itoa(int n)
 	int		start;
 
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (ft_strdup("-2147483648"));
 	if (n == 0)
-		return ("0");
+		return (ft_strdup("0"));
 	len = numlen(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
