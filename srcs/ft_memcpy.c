@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 22:23:15 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:22:39 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 23:37:55 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char *s;
 	char *d;
 
+	if (!dst || !src)
+		return (0);
 	i = 0;
 	s = (char *)src;
 	d = (char *)dst;

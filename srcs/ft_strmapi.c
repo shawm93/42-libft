@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:45:01 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 22:27:29 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 23:43:38 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (0);
 	i = 0;
 	ptr = (char *) malloc((ft_strlen(s) + 1) * sizeof(char));
+	if (!ptr)
+		return (NULL);
 	while (s[i])
 	{
 		ptr[i] = f(i, s[i]);
