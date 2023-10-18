@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:05:23 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:08:23 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 16:26:21 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,37 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void *big;
-
-	big = malloc(count * size);
+	size_t total;
+	if ((size != 0 && count > SIZE_MAX / size) 
+		|| (count != 0 && size > SIZE_MAX / count))
+		return (0);
+	total = count * size;
+	big = malloc(total);
 	if (!big)
 		return (0);
 	ft_bzero(big, count * size);
 	return (big);
 }
+/*
+void	*ft_calloc(size_t nitems, size_t size)
+{
+	size_t	totalsize;
+	char	*ptr;
+	int		i;
+
+	i = 0;
+	if (size == (SIZE_MAX) && nitems == (SIZE_MAX))
+		return (NULL);
+	else if ((size == 0 && nitems > (SIZE_MAX / 2))
+		|| (nitems == 0 && size > (SIZE_MAX / 2)))
+		i++;
+	else if (size >= (SIZE_MAX / 2) || nitems >= (SIZE_MAX / 2))
+		return (NULL);
+	totalsize = size * nitems;
+	ptr = malloc(totalsize);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, totalsize);
+	return (ptr);
+}
+*/

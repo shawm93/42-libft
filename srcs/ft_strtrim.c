@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:12:17 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:12:27 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 17:27:22 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,12 @@ static int	isset(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int s1_len;
+	size_t s1_len;
 	char *ptr;
+	char *str;
 
 	ptr = (char *)s1;
-	while (isset(*ptr, set))
+	while (isset(*ptr, set) && *ptr)
 		ptr++;
 	s1_len = ft_strlen(ptr);
 	while (isset(ptr[s1_len - 1], set))
@@ -40,5 +41,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 		ptr[s1_len - 1] = '\0';
 		s1_len--;
 	}
-	return (ptr);
+	s1_len = ft_strlen(ptr);
+	str = (char *)malloc(sizeof(char) + (s1_len + 1));
+	while (s1_len >= 0)
+	{
+		str[s1_len] = ptr[s1_len];
+		s1_len--;
+	}
+	return (str);
 }

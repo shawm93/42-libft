@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:50:19 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:12:08 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 12:37:24 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int counter;
+	size_t counter;
 	char *str;
 	size_t i;
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (*str != '\0' && i < len)
 	{
 		counter = 0;
-		while (*str == *needle && *needle != '\0')
+		while (*str == *needle && *needle != '\0' && counter + i < len)
 		{
 			str++;
 			needle++;

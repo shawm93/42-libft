@@ -6,21 +6,21 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:24:52 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 23:25:53 by long             ###   ########.fr       */
+/*   Updated: 2023/10/18 17:25:29 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
+#include <limits.h>
 
 int main(int ac, char **av)
 {
     (void) ac;
     (void) av;
     
-    char s3[] = "";
-	printf("%d", ft_strrchr(s3, 0) == s3);
-	return (0);
-
+    char * s = ft_strtrim("   xxxtripouille  ", " x");
+    printf("%s", s);
+    printf("%d", !strcmp(s, "tripouille"));
     /*
     //ft_strrchr
     printf("testing: %s\n", ft_strrchr(av[1], atoi(av[2])));
