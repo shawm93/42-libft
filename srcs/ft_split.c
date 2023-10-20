@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:20:14 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 23:45:28 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 13:23:53 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,8 @@ char	**ft_split(char const *s, char set)
 	int		count;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	count = word_count(s, set);
 	split_str = (char **)malloc((count + 1) * sizeof(char *));

@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 22:42:59 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:10:46 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 11:56:50 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*d;
 	char	*s;
 
+	if (!dst && !src)
+		return (NULL);
 	d = (char *)dst;
 	s = (char *)src;
 	i = 0;

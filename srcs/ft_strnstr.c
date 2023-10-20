@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:50:19 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 12:37:24 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 12:11:46 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	char *str;
 	size_t i;
 
+	if (!haystack && !len)
+		return (0);
 	str = (char *)haystack;
 	i = 0;
 	if (*needle == '\0')
