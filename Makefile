@@ -28,8 +28,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-#$(OBJS): $(SRCS)
-%.o: %.c
+.c.o:
 	$(CC) $(CFLAGS) $(OPTION) -c $< -o $@
 
 clean:
