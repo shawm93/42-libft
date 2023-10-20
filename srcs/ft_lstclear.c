@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 20:50:28 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:09:40 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 14:23:59 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *tmp;
+	t_list	*tmp;
 
 	if (!lst || !del)
 		return ;

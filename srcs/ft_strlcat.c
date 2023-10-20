@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:17:10 by long              #+#    #+#             */
-/*   Updated: 2023/10/20 12:02:41 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 13:59:57 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
-	size_t dst_len;
-	size_t src_len;
-	size_t total_len;
+	size_t	i;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	total_len;
 
 	i = 0;
 	src_len = ft_strlen(src);

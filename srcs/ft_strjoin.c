@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 15:56:26 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 23:52:08 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 14:00:59 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t total_len;
-	char *str;
-	int i;
-	int j;
+	size_t	total_len;
+	char	*str;
+	int		i;
+	int		j;
 
 	if (s1 && !s2)
 		return ((char *)s1);

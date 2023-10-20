@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 18:43:33 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 11:46:24 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 13:55:02 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(char *s, int c)
 {
-	char *ptr;
-	size_t i;
+	char	*ptr;
+	size_t	i;
 
 	i = ft_strlen(s);
 	while (i >= 0)

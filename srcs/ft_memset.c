@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 21:36:18 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:10:38 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 14:07:02 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t i;
-	unsigned char *ptr;
+	size_t			i;
+	unsigned char	*ptr;
 
 	i = 0;
 	ptr = (unsigned char *)b;

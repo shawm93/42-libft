@@ -6,13 +6,15 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 21:06:39 by long              #+#    #+#             */
-/*   Updated: 2023/10/20 12:14:25 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 16:01:08 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(const char *s11, const char *s22, unsigned int n)
+#include "../includes/libft.h"
+
+int	ft_strncmp(const char *s11, const char *s22, size_t n)
 {
-	unsigned int count;
+	size_t	count;
 	char	*s1;
 	char	*s2;
 

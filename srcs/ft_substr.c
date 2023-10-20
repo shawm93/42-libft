@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 15:43:56 by long              #+#    #+#             */
-/*   Updated: 2023/10/20 13:25:02 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 13:52:30 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    unsigned int    i;
-	char            *str;
+	unsigned int	i;
+	char			*str;
 	size_t			count;
 	size_t			real;
-	
+
 	if (!s)
 		return (NULL);
 	count = ft_strlen(s);

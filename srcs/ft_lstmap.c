@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 21:01:29 by long              #+#    #+#             */
-/*   Updated: 2023/10/17 22:10:00 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 14:21:18 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *begin;
-	t_list *next;
+	t_list	*begin;
+	t_list	*next;
 
 	if (!lst || !del || !f)
 		return (NULL);

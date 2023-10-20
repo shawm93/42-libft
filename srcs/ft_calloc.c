@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:05:23 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 16:26:21 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 15:15:14 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *big;
-	size_t total;
-	if ((size != 0 && count > SIZE_MAX / size) 
+	void	*big;
+	size_t	total;
+
+	if ((size != 0 && count > SIZE_MAX / size)
 		|| (count != 0 && size > SIZE_MAX / count))
 		return (0);
 	total = count * size;

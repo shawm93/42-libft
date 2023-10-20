@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:45:01 by long              #+#    #+#             */
-/*   Updated: 2023/10/18 23:43:38 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 13:58:55 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int i;
-	char *ptr;
+	unsigned int	i;
+	char			*ptr;
 
 	if (!s || !f)
 		return (0);

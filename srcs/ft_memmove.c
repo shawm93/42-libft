@@ -6,7 +6,7 @@
 /*   By: long <long@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 22:42:59 by long              #+#    #+#             */
-/*   Updated: 2023/10/20 11:56:50 by long             ###   ########.fr       */
+/*   Updated: 2023/10/20 14:14:28 by long             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	else
 	{
-		while (len)
-		{
-			len--;
+		while (len--)
 			d[len] = s[len];
-		}
 	}
 	return (dst);
 }
