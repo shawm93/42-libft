@@ -17,7 +17,7 @@ SRCS := $(addprefix $(SRCS_DIR), $(SRCS_FIL))
 BONUS := $(addprefix $(SRCS_DIR), $(BONS_FIL))
 
 HEADER = ./includes/
-CFLAGS = -Wall -Wextra -Werror -std=c99
+CFLAGS = -Wall -Wextra -Werror
 OPTION = -I $(HEADER)
 
 OBJS = $(SRCS:.c=.o)
